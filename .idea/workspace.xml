@@ -23,28 +23,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="beers_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="beers_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/beers_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="0" selection-start="2135" selection-end="2135" vertical-scroll-proportion="2.0454545" vertical-offset="0" max-vertical-offset="1350">
+            <state line="84" column="0" selection-start="2135" selection-end="2135" vertical-scroll-proportion="-50.4" vertical-offset="0" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="beer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/beer.rb">
+      <file leaf-file-name="20140216201449_add_style_id_to_beers.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20140216201449_add_style_id_to_beers.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="29" selection-start="316" selection-end="316" vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="315">
+            <state line="2" column="42" selection-start="105" selection-end="105" vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="165">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ratings_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ratings_controller.rb">
+      <file leaf-file-name="20140216213600_remove_style_from_beers.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20140216213600_remove_style_from_beers.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="5" selection-start="412" selection-end="538" vertical-scroll-proportion="-15.6" vertical-offset="0" max-vertical-offset="495">
+            <state line="2" column="41" selection-start="107" selection-end="107" vertical-scroll-proportion="0.05076142" vertical-offset="0" max-vertical-offset="591">
               <folding />
             </state>
           </provider>
@@ -123,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/brewery.rb" />
         <option value="$PROJECT_DIR$/app/views/sessions/koe.html.erb" />
         <option value="$PROJECT_DIR$/spec/models/beer_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
@@ -174,6 +173,7 @@
         <option value="$PROJECT_DIR$/app/views/styles/form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/styles_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/styles/index.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140216213600_remove_style_from_beers.rb" />
       </list>
     </option>
   </component>
@@ -257,6 +257,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ratebeer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="viikko4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ratebeer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="viikko4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -720,11 +752,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/models/beer_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="16" selection-start="403" selection-end="403" vertical-scroll-proportion="0.4712042" vertical-offset="0" max-vertical-offset="573" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/brewery_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="24" selection-start="450" selection-end="450" vertical-scroll-proportion="0.4973822" vertical-offset="0" max-vertical-offset="573" />
@@ -901,13 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140216201449_add_style_id_to_beers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="42" selection-start="105" selection-end="105" vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="7" selection-start="403" selection-end="403" vertical-scroll-proportion="-7.8" vertical-offset="0" max-vertical-offset="390">
@@ -1071,7 +1091,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/beers_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="2135" selection-end="2135" vertical-scroll-proportion="2.0454545" vertical-offset="0" max-vertical-offset="1350">
+        <state line="84" column="0" selection-start="2135" selection-end="2135" vertical-scroll-proportion="-50.4" vertical-offset="0" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140216201449_add_style_id_to_beers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="42" selection-start="105" selection-end="105" vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140216213600_remove_style_from_beers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="41" selection-start="107" selection-end="107" vertical-scroll-proportion="0.05076142" vertical-offset="0" max-vertical-offset="591">
           <folding />
         </state>
       </provider>
