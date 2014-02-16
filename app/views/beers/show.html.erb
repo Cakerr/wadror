@@ -21,4 +21,15 @@
     <p>Has <%= pluralize(@beer.ratings.count,'rating') %>, average <%= @beer.average_rating %> </p>
 <% end %>
 
+<% if current_user%>
+    <h4>give a rating:</h4>
+
+    <%= form_for(@rating) do |f|%>
+        <%= f.hidden_field :score %>
+        score: <%= f.number_field :score%>
+        <%= f.submit %>
+
+    <% end %>
+<% end %>
+
 <%= link_to 'Edit', edit_beer_path(@beer) if current_user %>
