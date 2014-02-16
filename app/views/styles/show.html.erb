@@ -1,0 +1,13 @@
+<h1><%= @style.name %></h1>
+
+<p><%= @style.description %></p>
+
+<h3>Beers:</h3>
+
+<ul>
+  <% @style.beers.each do |b|%>
+    <p><%=link_to b.name, b %> by <%=link_to b.brewery.name, b.brewery%></p>
+  <% end %>
+</ul>
+
+

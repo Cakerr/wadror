@@ -1,0 +1,12 @@
+<h1>Styles</h1>
+
+<table>
+  <tbody>
+  <% @styles.each do |style| %>
+      <tr>
+        <td><%= link_to style.name, style %></td>
+        <td><%= link_to 'Edit', edit_style_path(style) %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
