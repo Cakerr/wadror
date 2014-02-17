@@ -4,6 +4,7 @@ include OwnTestHelper
 
 describe "User" do
   let!(:user){FactoryGirl.create :user}
+  let!(:style){FactoryGirl.create :style}
 
   describe "who has signed up" do
     it "can signin with right credentials" do
@@ -34,7 +35,7 @@ describe "User" do
 
   it "favorite beer, style and brewery shown at page" do
     koff = FactoryGirl.create(:brewery, name:"Koff")
-    best = FactoryGirl.create(:beer, name:"iso 3", style:"Lager", brewery:koff)
+    best = FactoryGirl.create(:beer, name:"iso 3", style:style, brewery:koff)
     FactoryGirl.create(:rating, score:30, beer:best, user:user)
 
     create_beers_with_ratings(10, 15, 20, user)

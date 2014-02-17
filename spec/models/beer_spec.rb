@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Beer do
   it "is saved when name and style are nonempty" do
-    beer = Beer.create name:"Karhu", style:"Lager"
+    beer = Beer.create name:"Karhu", style:Style.new
 
     expect(beer).to be_valid
     expect(Beer.count).to eq(1)
@@ -10,7 +10,7 @@ describe Beer do
 
   describe "is not saved" do
     it "if name missing" do
-      beer = Beer.create style:"Lager"
+      beer = Beer.create style:Style.new
 
       expect(beer).not_to be_valid
       expect(Beer.count).to eq(0)

@@ -86,17 +86,17 @@ describe User do
     end
 
     it "is the style of the only rated if one rating" do
-      create_beers_with_ratings_and_style(10, "Lager", user)
+      create_beers_with_ratings_and_style(10, Style.new(name:"Lager"), user)
 
-      expect(user.favorite_style).to eq("Lager")
+      expect(user.favorite_style.name).to eq("Lager")
     end
 
     it "is the style with highest average rating if several rated" do
-      create_beers_with_ratings_and_style(10, 20, 15, "Lager", user)
-      create_beers_with_ratings_and_style(35, "IPA", user)
-      create_beers_with_ratings_and_style(25, 20, 15, "Porter", user)
+      create_beers_with_ratings_and_style(10, 20, 15, Style.new(name:"Lager"), user)
+      create_beers_with_ratings_and_style(35, Style.new(name:"IPA"), user)
+      create_beers_with_ratings_and_style(25, 20, 15,Style.new(name:"Porter"), user)
 
-      expect(user.favorite_style).to eq("IPA")
+      expect(user.favorite_style.name).to eq("IPA")
     end
   end
 
