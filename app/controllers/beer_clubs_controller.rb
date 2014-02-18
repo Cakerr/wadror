@@ -75,4 +75,8 @@ class BeerClubsController < ApplicationController
     def beer_club_params
       params.require(:beer_club).permit(:name, :founded, :city)
     end
+
+  def nglist
+
+  end
 end
