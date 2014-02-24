@@ -11,10 +11,17 @@ class User < ActiveRecord::Base
 
   has_secure_password
 
+
+
   has_many :ratings, dependent: :destroy
   has_many :beers, through: :ratings
   has_many :memberships, dependent: :destroy
   has_many :beer_clubs, through: :memberships
+
+  def self.most_active(n)
+    sorted = User.all.sort_by{|u| -(u.ratings.count||0)}
+    sorted[0..n-1]
+  end
 
   def favorite_beer
     return nil if ratings.empty?

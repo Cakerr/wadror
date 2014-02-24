@@ -9,4 +9,10 @@ class Brewery < ActiveRecord::Base
 
 	has_many :beers, :dependent => :destroy
   has_many :ratings, :through => :beers
+
+  def self.best_average(n)
+    sorted = Brewery.all.sort_by{|b| -(b.average_rating ||0)}
+    sorted[0..n-1]
+  end
+
 end

@@ -8,6 +8,7 @@
   <% @style.beers.each do |b|%>
     <p><%=link_to b.name, b %> by <%=link_to b.brewery.name, b.brewery%></p>
   <% end %>
+
 </ul>
 
-
+<%= edit_and_destroy_buttons(@style) %>
